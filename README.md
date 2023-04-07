@@ -1,4 +1,4 @@
-Includes diffs between old and new version for new packages releaesd on 
+Includes diffs between old and new version for new packages released on
 pypi for this day. Diffs are generated using diffoscope, output formats:
 
  * html
