@@ -2,12 +2,13 @@ name: gitleaks
 on: workflow_dispatch
 
 jobs:
-  uses: actions/checkout@v3
-  with:
-    fetch-depth: 0
-  - name: Run Gitleaks
-    id: gitleaks
-    uses: DariuszPorowski/github-action-gitleaks@v2
+  gitleaks:
+    uses: actions/checkout@v3
     with:
-      report_format: sarif
-      fail: true
+      fetch-depth: 0
+    - name: Run Gitleaks
+      id: gitleaks
+      uses: DariuszPorowski/github-action-gitleaks@v2
+      with:
+        report_format: sarif
+        fail: true
