@@ -5,5 +5,4 @@ jobs:
   gitleaks:
     steps:
       - uses: actions/checkout@v3
-        fetch-depth: 0
       - uses: DariuszPorowski/github-action-gitleaks@v2
